@@ -4,9 +4,9 @@ This project is a responsive website design made with nesting and SASS. It inclu
 
 # Links
 
-[Repository URL](https://github.com/p3lm3shka1/Clipboard-landing-page-master)
+[Repository URL](https://github.com/p3lm3shka1/Kelioniu-puslapio-dizainas)
 
-[Live site URL](https://p3lm3shka1.github.io/Clipboard-landing-page-master)
+[Live site URL](https://p3lm3shka1.github.io/Kelioniu-puslapio-dizainas/)
 
 
 ## Project Setup & SCSS Compilation Process
