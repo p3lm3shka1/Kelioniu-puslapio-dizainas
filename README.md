@@ -43,7 +43,8 @@ The compiled CSS file (styles.css) is then linked in index.html.
   ```
 @media (min-width: 480px) and (max-width: 768px)
 ```
-<img width="100" height="550" alt="image" src="https://github.com/user-attachments/assets/2630131f-6ba4-40ee-8358-4d7489038d81" />
+<img width="400" height="700" alt="image" src="https://github.com/user-attachments/assets/e0a044f3-daee-458c-b4c9-ed7c209f57a6" />
+
 </details>  
 
 <details>
@@ -52,7 +53,7 @@ The compiled CSS file (styles.css) is then linked in index.html.
   ```
 @media (min-width: 769px) and (max-width: 1024px)
 ```
-<img width="100" height="550" alt="image" src="https://github.com/user-attachments/assets/2630131f-6ba4-40ee-8358-4d7489038d81" />
+
 </details>  
 
 <details>
