@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 .about-hero-bg {
-  background: url(/imgs/statistics-bg.png);
+  background: url(../imgs/statistics-bg.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -131,7 +131,7 @@
   }
 }
 .contacts-header-bg {
-  background: url(imgs/contacts-bg.jpg);
+  background: url(../imgs/contacts-bg.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -286,7 +286,7 @@ body {
 }
 
 .header-bg {
-  background: radial-gradient(43.46% 49.09% at 50% 48.87%, rgba(51, 51, 51, 0.6) 0%, rgba(51, 51, 51, 0) 67.3%, rgba(51, 51, 51, 0) 100%), url(imgs/hero-bg.jpg);
+  background: radial-gradient(43.46% 49.09% at 50% 48.87%, rgba(51, 51, 51, 0.6) 0%, rgba(51, 51, 51, 0) 67.3%, rgba(51, 51, 51, 0) 100%), url(../imgs/hero-bg.jpg);
   background-blend-mode: darken;
   background-size: cover;
   background-position: center center;
@@ -518,7 +518,7 @@ body {
 }
 
 .stats-bg {
-  background: linear-gradient(rgba(148, 160, 86, 0), rgba(148, 160, 86, 0.3)), url("imgs/statistics-bg.png");
+  background: linear-gradient(rgba(148, 160, 86, 0), rgba(148, 160, 86, 0.3)), url("../imgs/statistics-bg.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
