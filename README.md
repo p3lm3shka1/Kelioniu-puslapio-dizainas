@@ -57,7 +57,8 @@ The compiled CSS file (styles.css) is then linked in index.html.
 
 <details>
 <summary>Desktop version</summary>
-<img width="1200" height="500" alt="image" src="https://github.com/user-attachments/assets/8d451260-51cd-4c1c-8625-6f30c930a7f5" />
+<img width="1200" height="500" alt="image" src="https://github.com/user-attachments/assets/69784b15-df32-4286-bf54-07903b49dbc7" />
+
 </details>
 
 ## Author
