@@ -1,0 +1,344 @@
+//font
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+// mixins
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_about.scss";
+@import "contacts.scss";
+@import "_media.scss";
+
+// body-template
+body {
+  @include body-template;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+//header background
+.header-bg {
+  @include hero-bg;
+  //navigation
+  .nav-style {
+    @include nav-style;
+  }
+  //hero
+  .hero {
+    min-height: 100vh;
+    @include flex;
+    flex-direction: column;
+    h1 {
+      @include h1;
+      margin: 0 auto;
+    }
+    h3 {
+      @include h3;
+      margin: $pad-m auto;
+    }
+    .hero-btn {
+      @include btn-style;
+    }
+  }
+  .intersect-bg {
+    @include intersect-hero;
+  }
+}
+//article section
+.acticles-bg {
+  max-width: $w-full;
+  .quotes {
+    @include flex;
+    width: $w-full;
+    padding: $pad-xl 0;
+    img {
+      padding: 0 $pad-s $pad-m 0;
+    }
+    p {
+      @include p;
+      width: $w-l;
+    }
+  }
+  .places {
+    position: relative;
+    padding: $pad-max;
+    max-width: $w-full;
+
+    .places-container {
+      width: $w-xl;
+      margin: 0 auto;
+      @include flex;
+      position: relative;
+
+      .card {
+        width: $w-full;
+        padding: $pad-max;
+        box-shadow: 0px 0px 20px 0px #7a74741a;
+        position: relative;
+        z-index: 100;
+
+        h4 {
+          @include h4;
+        }
+        h3 {
+          @include h3;
+          color: #4b4b4b;
+        }
+        .location {
+          display: flex;
+          align-items: center;
+          gap: $pad-s;
+          img {
+            height: 10%;
+          }
+          p {
+            @include p;
+          }
+        }
+        p {
+          @include p;
+          width: 90%;
+        }
+        .buttons {
+          display: flex;
+          flex-direction: column;
+          gap: $pad-s;
+
+          .btn-first {
+            cursor: pointer;
+            &:hover {
+              transform: scale(0.95);
+            }
+          }
+          .btn-second {
+            cursor: pointer;
+            &:hover {
+              transform: scale(0.95);
+            }
+          }
+        }
+      }
+      .location-images {
+        position: relative;
+        width: 100%;
+      }
+      .bg-img {
+        @include bg-img;
+      }
+      .main-img {
+        @include main-img;
+      }
+      .opacity-img {
+        @include opacity-img;
+      }
+    }
+  }
+}
+//statistics section
+.stats-bg {
+  @include stats-bg;
+  max-width: $w-full;
+  height: $vh-m;
+  .grid-center {
+    @include grid;
+    min-height: $vh-m;
+    .stats-card {
+      @include stats-card;
+
+      .stats-left {
+        @include flex;
+        flex-direction: column;
+        width: 50%;
+        gap: $pad-s;
+        .h2 {
+          @include h2;
+          color: black;
+        }
+
+        p {
+          @include p;
+          color: #888888;
+        }
+      }
+
+      .stats-right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: $pad-s 0;
+        gap: $pad-max;
+      }
+
+      .stats-item {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card-title {
+        @include titles;
+      }
+
+      .card-number {
+        @include numbers;
+      }
+
+      .card-sub {
+        @include p;
+        color: #888888;
+      }
+    }
+  }
+  .intersect-bg-stats {
+    @include intersect-bg-stats;
+  }
+}
+//gallery section
+.gallery-bg {
+  position: relative;
+  max-width: 100%;
+  min-height: 90vh;
+  z-index: 10;
+
+  h2 {
+    width: 70%;
+    margin: $m-save;
+    padding: $pad-max $pad-max;
+    @include h2;
+    color: black;
+  }
+
+  .gallery-grid {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $pad-l;
+    margin: $m-save;
+    padding: $pad-m $pad-s;
+
+    .gallery-card {
+      position: relative;
+      overflow: hidden;
+
+      img {
+        width: $w-full;
+        height: $height-full;
+        object-fit: cover;
+        display: block;
+        opacity: 1;
+      }
+      .gallery-title {
+        @include gallery-title;
+      }
+      .overlay {
+        @include overlay;
+        p {
+          margin: 1rem 1rem 5rem 1rem;
+          text-align: left;
+          color: $white;
+        }
+        .top-btn {
+          @include top-btn-overlay;
+        }
+        .btm-btn {
+          @include btm-btn-overlay;
+        }
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .intersect-gallery-top {
+    @include itersect-top;
+  }
+  .intersect-gallery-btm {
+    @include intersect-btm;
+  }
+}
+//footer
+footer {
+  background: #11224d;
+  color: #fff;
+  padding-top: $pad-max;
+}
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  margin: $m-save;
+  max-width: 70%;
+
+  .footer-brands {
+    width: 70%;
+    img {
+      cursor: pointer;
+    }
+  }
+  .text-follow {
+    padding: $pad-s 0 0 0;
+    @include p;
+    color: white;
+  }
+  .social-links {
+    display: flex;
+    gap: 1rem;
+
+    .social-icon {
+      display: block;
+      width: 3rem;
+      height: 3rem;
+      border: 1px solid #b8e4da;
+      border-radius: 50%;
+      &:hover {
+        border-color: #fff;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+  .footer-flex {
+    @include footer-flex;
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      gap: $pad-s;
+
+      h5 {
+        @include h5;
+        margin: $pad-s 0;
+      }
+      a {
+        @include a;
+      }
+    }
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+      gap: $pad-s;
+
+      h5 {
+        @include h5;
+        margin: $pad-s 0;
+      }
+      a {
+        @include a;
+      }
+    }
+  }
+}
+.footer-copyright {
+  padding: $pad-s 0;
+  text-align: center;
+  hr {
+    opacity: 0.1;
+    background: #dcf2ed;
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #dcf2ed;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  @include respond-phone;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  @include respond-tablet;
+}

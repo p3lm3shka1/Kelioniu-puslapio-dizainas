@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Kontaktai</title>
+  </head>
+  <body>
+    <!-- background -->
+    <header class="contacts-header-bg">
+      <!-- navigation -->
+      <nav class="nav-style">
+        <div class="nav-between">
+          <img src="images/logo.png" alt="logo" class="logo" />
+          <div class="navigation">
+            <ul>
+              <li><a href="index.html" class="underline">Pagrindinis</a></li>
+              <li><a href="about.html">Apie mus</a></li>
+              <li><a href="contacts.html">Kontaktai</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="contacts-h2">
+        <h2>KONTAKTAI</h2>
+      </div>
+    </header>
+    <main>
+      <!-- main -->
+      <section class="contacts-section">
+        <div class="contacts-grid">
+          <div class="contacts-flex card">
+            <div class="contacts-columns">
+              <div class="contacts-info">
+                <div>
+                  <h2>Kontaktai</h2>
+                </div>
+                <ul>
+                  <li>
+                    — Telefono numeris:<br /><img
+                      src="images/phone-img.png"
+                      alt="phnone"
+                    /><a href="tel:+37061234567">+370 61234567</a>
+                  </li>
+                  <li>
+                    — Elektroninis paštas:<br /><img
+                      src="images/mail-img.png"
+                      alt="email"
+                    /><a href="mailto:info@keliaukartu.lt"
+                      >info@keliaukartu.lt</a
+                    >
+                  </li>
+                  <li>
+                    — Įmonės adresas:<br /><img
+                      src="images/map-img.png"
+                      alt="map"
+                    /><a href="https://maps.app.goo.gl/VK93PrRR5AGhKuBr9"
+                      >Girininkų g. 58, Linkuva, Pakruojo r., LT-45964,
+                      Lietuva</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="contacts-info">
+                <div>
+                  <h2>Rekvizitai</h2>
+                </div>
+                <ul>
+                  <li>
+                    — Įmonės pavadinimas:<br /><a href="#"
+                      >UAB "Keliauk kartu"</a
+                    >
+                  </li>
+                  <li>— Įmonės kodas:<br /><a href="#">300000001</a></li>
+                  <li>
+                    — PVM mokėtojo kodas:<br /><a href="#">LT115252622541</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="contacts-map card">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8904.671851668752!2d23.959491541114716!3d56.085010193944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e8a6ed7793a2dd%3A0xa00d18ec9ba73d0!2sLinkuva%2C%20Pakruojo%20r.%20sav.!5e0!3m2!1slt!2slt!4v1764540815941!5m2!1slt!2slt"
+              allowfullscreen
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+          <div class="contacts-form card">
+            <h2>Parašykite mums</h2>
+            <form>
+              <div class="form-section">
+                <label for="vardas">Vardas</label>
+                <input type="text" id="vardas" name="vardas" required />
+              </div>
+
+              <div class="form-section">
+                <label for="telefonas">Telefono Nr.</label>
+                <input type="tel" id="telefonas" name="telefonas" required />
+              </div>
+
+              <div class="form-section">
+                <label for="email">El. paštas</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-section">
+                <label for="message">Žinutė</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="contacts-btn">Siųsti</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="footer-section">
+        <div class="footer-brands">
+          <img src="images/logo-footer.png" alt="logo" />
+          <p class="text-follow">Sekite mus</p>
+          <div class="social-links">
+            <a href="#" class="social-icon"
+              ><img src="images/FaceBook.png" alt="FaceBook"
+            /></a>
+            <a href="#" class="social-icon"
+              ><img src="images/Twitter.png" alt="Twitter"
+            /></a>
+            <a href="#" class="social-icon"
+              ><img src="images/Linkedin.png" alt="Linkedin"
+            /></a>
+            <a href="#" class="social-icon"
+              ><img src="images/Instagram.png" alt="Instagram"
+            /></a>
+          </div>
+        </div>
+        <div class="footer-flex">
+          <div class="footer-nav">
+            <h5 class="footer-title">Navigacija</h5>
+            <a href="index.html">Pagrindinis</a>
+            <a href="about.html">Apie mus</a>
+            <a href="contacts.html">Kontaktai</a>
+          </div>
+          <div class="footer-contact">
+            <h5 class="footer-title">Kontaktai</h5>
+            <a href="#">UAB "Keliauk kartu"</a>
+            <a href="#">Girininkų g. 58, Linkuva</a>
+            <a href="#">Tel. nr: 861234567</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <hr />
+        <p class="copyright-text">Copyright 2022 Keliauk kartu</p>
+      </div>
+    </footer>
+  </body>
+</html>

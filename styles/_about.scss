@@ -1,0 +1,74 @@
+//font
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+// header
+.about-hero-bg {
+  @include about-hero-bg;
+
+  .about-h2 {
+    @include flex;
+    h2 {
+      width: 70%;
+      @include h2;
+      padding: $pad-max 0;
+    }
+  }
+}
+
+//navigation
+.nav-style {
+  @include nav-style;
+}
+
+//hero
+.about-hero {
+  @include about-hero;
+
+  .about-container {
+    @include about-container;
+
+    .about-text {
+      @include about-text;
+    }
+
+    .about-image {
+      position: relative;
+      z-index: 10;
+
+      img {
+        width: 100%;
+        height: $height-half;
+        object-fit: cover;
+        display: block;
+      }
+
+      .about-intersect {
+        @include about-intersect;
+      }
+    }
+  }
+}
+
+//media
+@media (min-width: 480px) and (max-width: 768px) {
+  .about-hero-bg {
+    width: $w-full;
+    h2 {
+      text-align: center;
+    }
+  }
+  .nav-style {
+    width: $w-full;
+    .nav-between {
+      width: $w-full;
+      flex-direction: column;
+      .logo {
+        width: auto;
+      }
+    }
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}

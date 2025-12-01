@@ -1,0 +1,228 @@
+// responsive for phones (480px - 768px)
+
+@mixin respond-phone {
+  .header-bg {
+    height: 100vh;
+    background-position: center top;
+    max-width: 100%;
+  }
+
+  .header-bg .nav-style {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .header-bg .nav-style .logo {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .header-bg .nav-style .navigation ul {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .header-bg .hero h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .header-bg .hero h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .header-bg .hero .hero-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 12px;
+  }
+
+  .acticles-bg .quotes {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .acticles-bg .quotes p {
+    width: 90%;
+  }
+
+  .acticles-bg .places {
+    padding: 2rem 1rem;
+  }
+
+  .acticles-bg .places .places-container {
+    flex-direction: column;
+  }
+
+  .acticles-bg .places .places-container .card {
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .acticles-bg .places .places-container .card .buttons {
+    width: 100%;
+  }
+
+  .acticles-bg .places .places-container .location-images {
+    display: none;
+  }
+
+  .stats-bg {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  .stats-bg .grid-center .stats-card {
+    grid-template-columns: 1fr;
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .stats-bg .grid-center .stats-card .stats-left {
+    width: 100%;
+  }
+
+  .stats-bg .grid-center .stats-card .stats-right {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .gallery-bg h2 {
+    width: 90%;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .gallery-bg .gallery-grid {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .gallery-bg .gallery-grid .gallery-card:hover {
+    scale: 1.03;
+  }
+}
+
+// responsive for tables (769px - 1024px)
+
+@mixin respond-tablet {
+  .header-bg {
+    height: 90vh;
+    background-position: center top;
+  }
+
+  .header-bg .nav-style {
+    padding: 1rem 2rem;
+  }
+
+  .header-bg .nav-style .logo {
+    width: 40%;
+  }
+
+  .header-bg .nav-style .navigation ul {
+    gap: 2rem;
+  }
+
+  .header-bg .hero h1 {
+    font-size: 70px;
+  }
+
+  .header-bg .hero h3 {
+    font-size: 28px;
+  }
+
+  .acticles-bg .quotes {
+    padding: 3rem 2rem;
+  }
+
+  .acticles-bg .quotes p {
+    width: 80%;
+  }
+
+  /* PLACES BLOCK */
+  .acticles-bg .places {
+    padding: 3rem 2rem;
+  }
+
+  .acticles-bg .places .places-container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .acticles-bg .places .places-container .card {
+    padding: 3rem;
+    width: 60%;
+  }
+
+  .acticles-bg .places .places-container .card .buttons {
+    width: 60%;
+  }
+
+  .acticles-bg .places .places-container .location-images .bg-img {
+    width: 90%;
+    top: -200px;
+  }
+
+  .acticles-bg .places .places-container .main-img {
+    left: -20px;
+    top: -180px;
+    width: 260px;
+    height: 340px;
+  }
+
+  .acticles-bg .places .places-container .opacity-img {
+    left: 250px;
+    top: -180px;
+    width: 260px;
+    height: 340px;
+  }
+
+  .stats-bg .grid-center .stats-card {
+    width: 80%;
+    padding: 3rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stats-bg .grid-center .stats-card .stats-right {
+    gap: 3rem;
+  }
+
+  .gallery-bg h2 {
+    width: 80%;
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .gallery-bg .gallery-grid {
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .gallery-bg .gallery-grid .gallery-card:hover {
+    scale: 1.05;
+  }
+
+  .footer-section {
+    max-width: 80%;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-section .footer-flex {
+    gap: 3rem;
+  }
+
+  .footer-section .footer-brands {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}

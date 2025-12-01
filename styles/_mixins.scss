@@ -1,0 +1,429 @@
+// flexbox
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//grid template
+@mixin grid {
+  display: grid;
+  place-items: center;
+}
+
+// body template
+@mixin body-template {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  background-color: $white;
+  max-width: 100%;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+//headers and paragraphs
+@mixin h1 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 90px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: $white;
+}
+
+@mixin h2 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: white;
+}
+
+@mixin h3 {
+  font-weight: 300;
+  font-style: Light;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: $white;
+}
+
+@mixin h4 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #a6a6a6;
+}
+
+@mixin h5 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+@mixin p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  letter-spacing: 0%;
+  color: #666666;
+}
+
+//navigation
+@mixin nav-style {
+  max-width: 100%;
+  background: $white;
+  box-shadow: 0px 2px 10px 0px #00000026;
+  padding: $pad-s 0;
+  .nav-between {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    .logo {
+      cursor: pointer;
+    }
+    .navigation {
+      ul {
+        list-style-type: none;
+        @include flex;
+        gap: 3rem;
+        a {
+          text-decoration: none;
+          color: $blue;
+          font-weight: $font-w-l;
+          &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+//hero
+@mixin hero-bg {
+  background: radial-gradient(
+      43.46% 49.09% at 50% 48.87%,
+      rgba(51, 51, 51, 0.6) 0%,
+      rgba(51, 51, 51, 0) 67.3%,
+      rgba(51, 51, 51, 0) 100%
+    ),
+    url(/images/hero-bg.jpg);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+@mixin intersect-hero {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  z-index: 10;
+  rotate: 180deg;
+  overflow: hidden;
+}
+
+//button
+@mixin btn-style {
+  gap: 10px;
+  border-radius: 24px;
+  padding: 1rem 2rem;
+  background: linear-gradient(180deg, #00d4e4 -40.5%, #1f59ee 97.28%);
+  color: $white;
+  border: none;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    transform: scale(0.95);
+    background: $blue;
+  }
+}
+
+//article
+@mixin bg-img {
+  position: absolute;
+  right: 50px;
+  top: -320px;
+  width: 100%;
+  opacity: 0.3;
+}
+
+@mixin main-img {
+  position: absolute;
+  left: -50px;
+  top: -250px;
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+@mixin opacity-img {
+  position: absolute;
+  left: 350px;
+  top: -250px;
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  opacity: 0.7;
+  z-index: 100;
+}
+
+//statistics
+@mixin stats-bg {
+  background: linear-gradient(rgba(148, 160, 86, 0), rgba(148, 160, 86, 0.3)),
+    url("/images/statistics-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+@mixin intersect-bg-stats {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 39%;
+  overflow: hidden;
+  z-index: 100;
+}
+
+@mixin stats-card {
+  position: relative;
+  background: white;
+  padding: $pad-max $pad-max;
+  @include grid;
+  grid-template-columns: 1fr 1fr;
+  width: $w-l;
+  margin: $pad-max auto;
+  z-index: 10;
+  align-items: center;
+}
+
+@mixin numbers {
+  font-weight: $font-w-l;
+  font-size: 50px;
+  background: linear-gradient(180deg, #00d4e4, #1f59ee);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0.5rem 0;
+}
+
+@mixin titles {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #333333;
+}
+
+//gallerry
+@mixin gallery-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: $w-full;
+  padding: 1rem 1rem;
+  color: #fff;
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+
+@mixin overlay {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2b2b2bb2;
+  opacity: 0;
+}
+
+@mixin top-btn-overlay {
+  margin: 0 1rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(180deg, #00d4e4 -40.5%, #1f59ee 97.28%);
+  color: white;
+  border-radius: 24px;
+  border: none;
+  width: 70%;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  &:hover {
+    scale: 0.95;
+  }
+}
+
+@mixin btm-btn-overlay {
+  @include flex;
+  margin: 0 1rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(180deg, #00d4e4 -40.5%, #1f59ee 97.28%);
+  color: white;
+  border-radius: 24px;
+  border: none;
+  width: 50%;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  img {
+    display: block;
+    object-fit: contain;
+    width: 16px;
+  }
+  &:hover {
+    scale: 0.95;
+  }
+}
+
+@mixin itersect-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  overflow: hidden;
+  z-index: 100;
+}
+
+@mixin intersect-btm {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  rotate: 180deg;
+  overflow: hidden;
+  z-index: 100;
+}
+
+//footer
+@mixin footer-flex {
+  display: flex;
+  flex-direction: row;
+  gap: $pad-max;
+}
+
+@mixin a {
+  color: #dcf2ed;
+  text-decoration: none;
+  font-weight: 400;
+  cursor: pointer;
+  &:hover {
+    color: white;
+    opacity: 1;
+  }
+}
+
+// ABOUT PAGE MIXINS
+//hero
+@mixin about-hero-bg {
+  background: url(/images/statistics-bg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 30vh;
+  width: 100%;
+}
+//main content
+@mixin about-hero {
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  padding: $pad-max 0;
+}
+
+@mixin about-container {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 60vh;
+  gap: $pad-m;
+  overflow: hidden;
+}
+
+@mixin about-text {
+  background: #ffffff4d;
+  padding: $pad-max $pad-max;
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.05);
+  height: 40%;
+  p {
+    padding: $pad-s 0;
+    @include p;
+    color: #333333;
+  }
+}
+
+@mixin about-intersect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: auto;
+  z-index: 20;
+}
+
+// CONTACTS PAGE MIXINS
+//bg
+@mixin contacts-hero-bg {
+  background: url(/images/contacts-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 30vh;
+  width: 100%;
+}
+//button
+@mixin contacts-btn {
+  width: 30%;
+  margin: $pad-s $pad-m;
+  padding: $pad-s $pad-m;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #00d4e4 -40.5%, #1f59ee 97.28%);
+  color: white;
+  @include flex;
+
+  &:hover {
+    scale: 0.95;
+  }
+}
