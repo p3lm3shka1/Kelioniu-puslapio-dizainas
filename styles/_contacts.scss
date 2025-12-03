@@ -1,6 +1,9 @@
 //font
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
+//imports
+@import "_media.scss";
+
 //header
 .contacts-header-bg {
   @include contacts-hero-bg;
@@ -14,15 +17,22 @@
     }
   }
 }
+
+//navigation
+.nav-style {
+  @include nav-style;
+}
+
 //main
 .contacts-section {
   @include flex;
   max-width: $w-full;
   height: 100vh;
+  padding-bottom: $pad-max;
 
   .contacts-grid {
     width: 70%;
-    height: 80vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -119,6 +129,96 @@
   }
 }
 
-//media
+//footer
+footer {
+  background: #11224d;
+  color: #fff;
+  padding-top: $pad-max;
+}
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  margin: $m-save;
+  max-width: 70%;
+
+  .footer-brands {
+    width: 70%;
+    img {
+      cursor: pointer;
+    }
+  }
+  .text-follow {
+    padding: $pad-s 0 0 0;
+    @include p;
+    color: white;
+  }
+  .social-links {
+    display: flex;
+    gap: 1rem;
+
+    .social-icon {
+      display: block;
+      width: 3rem;
+      height: 3rem;
+      border: 1px solid #b8e4da;
+      border-radius: 50%;
+      &:hover {
+        border-color: #fff;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+  .footer-flex {
+    @include footer-flex;
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      gap: $pad-s;
+
+      h5 {
+        @include h5;
+        margin: $pad-s 0;
+      }
+      a {
+        @include a;
+      }
+    }
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+      gap: $pad-s;
+
+      h5 {
+        @include h5;
+        margin: $pad-s 0;
+      }
+      a {
+        @include a;
+      }
+    }
+  }
+}
+.footer-copyright {
+  padding: $pad-s 0;
+  text-align: center;
+  hr {
+    opacity: 0.1;
+    background: #dcf2ed;
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #dcf2ed;
+  }
+}
+
+//MEDIA
+
 @media (min-width: 480px) and (max-width: 768px) {
+  @include media-phone-contacts;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  @include media-tablet-contacts;
 }

@@ -1,6 +1,9 @@
 //font
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
+//imports
+@import "_media.scss";
+
 // header
 .about-hero-bg {
   @include about-hero-bg;
@@ -49,26 +52,12 @@
   }
 }
 
-//media
+//MEDIA
+
 @media (min-width: 480px) and (max-width: 768px) {
-  .about-hero-bg {
-    width: $w-full;
-    h2 {
-      text-align: center;
-    }
-  }
-  .nav-style {
-    width: $w-full;
-    .nav-between {
-      width: $w-full;
-      flex-direction: column;
-      .logo {
-        width: auto;
-      }
-    }
-  }
-  .about-container {
-    grid-template-columns: 1fr;
-    height: auto;
-  }
+  @include media-phone-about;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  @include media-tablet-about;
 }
