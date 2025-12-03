@@ -2,14 +2,106 @@
 
 //480px - 768px (phone)
 @mixin styles-main-phone {
+  .header-bg {
+    width: 100%;
+    .hero {
+      h1 {
+        text-align: center;
+        padding: 0;
+        font-size: 50px;
+      }
+
+      .nav-style {
+        .nav-between {
+          flex-direction: column;
+          align-items: center;
+          padding: $pad-s 0;
+          .logo {
+            width: 60%;
+            padding: $pad-s 0 $pad-s $pad-l;
+          }
+          .navigation {
+            width: 100%;
+            ul {
+              flex-direction: column;
+              gap: $pad-s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //footer
+  footer {
+    flex-direction: column;
+    justify-content: center;
+
+    .footer-section {
+      margin: 0 $pad-m;
+      width: 100%;
+      gap: 1.5rem;
+      flex-direction: column;
+
+      .footer-flex {
+        gap: 1.5rem;
+        flex-direction: column;
+
+        .footer-nav,
+        .footer-contact {
+          gap: 0.5rem;
+          flex-direction: column;
+        }
+      }
+    }
+  }
 }
 
 //769px - 1024px (tablet)
 @mixin styles-main-tablet {
+  //footer
+  footer {
+    flex-direction: column;
+    justify-content: center;
+
+    .footer-section {
+      margin: 0 $pad-m;
+      width: 100%;
+      gap: 1.5rem;
+
+      .footer-flex {
+        gap: 1.5rem;
+        flex-direction: row;
+
+        .footer-nav,
+        .footer-contact {
+          gap: 0.5rem;
+          flex-direction: column;
+        }
+      }
+    }
+  }
 }
 
 // ABOUT
 // 480px - 768px (phone)
+.nav-style {
+  .nav-between {
+    flex-direction: column;
+    align-items: center;
+    padding: $pad-s 0;
+    .logo {
+      width: 40%;
+      padding: $pad-s 0 $pad-s $pad-l;
+    }
+    .navigation {
+      width: 100%;
+      ul {
+        gap: $pad-s;
+      }
+    }
+  }
+}
 
 @mixin media-phone-about {
   //header
@@ -112,7 +204,6 @@
 
       .about-text {
         height: auto;
-        padding: $pad-xl;
         p {
           font-size: 12px;
         }
@@ -284,14 +375,14 @@
       .contacts-flex {
         grid-area: auto;
         padding: $pad-m;
+        flex-direction: row;
 
         .contacts-columns {
-          flex-direction: column;
           gap: $pad-m;
 
           .contacts-info {
             h2 {
-              padding: $pad-s 0;
+              padding: $pad-s $pad-l;
             }
           }
         }
