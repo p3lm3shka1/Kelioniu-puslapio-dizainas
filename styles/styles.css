@@ -49,14 +49,13 @@
   padding: 0;
 }
 .nav-style .nav-between {
-  width: 70%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .nav-style .nav-between .logo {
-  cursor: pointer;
+  width: auto;
+  padding: 0 1rem;
 }
 .nav-style .nav-between .navigation ul {
   list-style-type: none;
@@ -268,14 +267,13 @@
   padding: 0;
 }
 .nav-style .nav-between {
-  width: 70%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .nav-style .nav-between .logo {
-  cursor: pointer;
+  width: auto;
+  padding: 0 1rem;
 }
 .nav-style .nav-between .navigation ul {
   list-style-type: none;
@@ -742,14 +740,13 @@ body {
   padding: 0;
 }
 .header-bg .nav-style .nav-between {
-  width: 70%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .header-bg .nav-style .nav-between .logo {
-  cursor: pointer;
+  width: auto;
+  padding: 0 1rem;
 }
 .header-bg .nav-style .nav-between .navigation ul {
   list-style-type: none;
@@ -1143,7 +1140,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 1rem;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   background: linear-gradient(180deg, #00d4e4 -40.5%, #1f59ee 97.28%);
   color: white;
   border-radius: 24px;
@@ -1318,6 +1315,7 @@ footer {
     padding: 1rem 0;
   }
   .header-bg .hero .nav-style .nav-between .logo {
+    width: auto;
     padding: 1rem 0 1rem 3rem;
   }
   .header-bg .hero .nav-style .nav-between .navigation {
