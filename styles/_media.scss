@@ -40,10 +40,96 @@
     }
 
     .acticles-bg {
-      width: 100%;
       .quotes {
+        flex-direction: column;
+        text-align: center;
+
+        img {
+          padding: 0;
+        }
+
         p {
-          align-items: center;
+          width: 100%;
+        }
+      }
+
+      .places {
+        padding: $pad-l;
+
+        .places-container {
+          width: 90%;
+          flex-direction: column; // Одна карточка в ряд
+
+          .card {
+            width: 100%;
+            padding: $pad-l;
+          }
+
+          .location-images {
+            width: 100%;
+          }
+
+          .main-img,
+          .bg-img,
+          .opacity-img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+
+    // ===== STATISTICS =====
+    .stats-bg {
+      height: auto;
+
+      .grid-center {
+        min-height: auto;
+        padding: $pad-l 0;
+
+        .stats-card {
+          flex-direction: column;
+          text-align: center;
+          gap: $pad-l;
+
+          .stats-left {
+            width: 100%;
+            align-items: center;
+          }
+
+          .stats-right {
+            grid-template-columns: 1fr; // в колонку
+            gap: $pad-l;
+          }
+        }
+      }
+    }
+
+    // ===== GALLERY =====
+    .gallery-bg {
+      h2 {
+        width: 90%;
+        margin: 0 auto;
+        padding: $pad-l 0;
+      }
+
+      .gallery-grid {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $pad-m;
+
+        .gallery-card {
+          img {
+            height: 220px;
+          }
+
+          .overlay {
+            padding: $pad-s;
+
+            p {
+              margin: 1rem;
+            }
+          }
         }
       }
     }
