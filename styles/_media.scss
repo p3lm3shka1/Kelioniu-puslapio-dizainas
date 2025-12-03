@@ -5,19 +5,27 @@
   .header-bg {
     width: 100%;
     .hero {
+      padding: $pad-max 0;
+      justify-content: start;
       h1 {
         text-align: center;
-        padding: 0;
+
         font-size: 50px;
+      }
+      h3 {
+        padding: $pad-s 0;
+      }
+      .hero-btn {
+        margin: $pad-l 0;
       }
 
       .nav-style {
+        width: 100%;
         .nav-between {
           flex-direction: column;
-          align-items: center;
+
           padding: $pad-s 0;
           .logo {
-            width: 60%;
             padding: $pad-s 0 $pad-s $pad-l;
           }
           .navigation {
@@ -27,6 +35,15 @@
               gap: $pad-s;
             }
           }
+        }
+      }
+    }
+
+    .acticles-bg {
+      width: 100%;
+      .quotes {
+        p {
+          align-items: center;
         }
       }
     }
