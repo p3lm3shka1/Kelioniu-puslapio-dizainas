@@ -6,7 +6,6 @@
 @import "_mixins.scss";
 @import "_about.scss";
 @import "contacts.scss";
-@import "_media.scss";
 
 // body-template
 body {
@@ -336,5 +335,4 @@ footer {
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
-  @include styles-main-phone;
 }

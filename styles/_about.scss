@@ -1,11 +1,6 @@
 //font
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
-//imports
-@import "_media.scss";
-@import "_variables.scss";
-@import "_mixins.scss";
-
 // header
 .about-hero-bg {
   @include about-hero-bg;
@@ -56,6 +51,146 @@
 
 //MEDIA
 
-@media (min-width: 480px) and (max-width: 768px) {
-  @include media-phone-about;
+@media (max-width: 480px) {
+  //header
+  .contacts-header-bg {
+    width: $w-full;
+    height: 100vh;
+    .contacts-h2 {
+      width: $w-full;
+
+      @include flex;
+      h2 {
+        margin: 0 $pad-s;
+      }
+    }
+  }
+  //navigation
+  .nav-style {
+    .nav-between {
+      flex-direction: column;
+      align-items: center;
+      padding: $pad-s 0;
+      .logo {
+        width: 60%;
+        padding: $pad-s 0 $pad-s $pad-l;
+      }
+      .navigation {
+        width: 100%;
+        ul {
+          flex-direction: column;
+          gap: $pad-s;
+        }
+      }
+    }
+  }
+
+  //hero
+  .about-hero {
+    padding: $pad-l 0;
+
+    .about-container {
+      width: 100%;
+      grid-template-columns: 1fr;
+      height: auto;
+      gap: $pad-m;
+
+      .about-text {
+        height: auto;
+        padding: $pad-l;
+      }
+
+      .about-image {
+        img {
+          height: auto;
+          object-fit: contain;
+        }
+
+        .about-intersect {
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  //footer
+  footer {
+    flex-direction: column;
+    justify-content: center;
+
+    .footer-section {
+      margin: 0 $pad-m;
+      width: 100%;
+      gap: 1.5rem;
+      flex-direction: column;
+
+      .footer-flex {
+        gap: 1.5rem;
+        flex-direction: column;
+
+        .footer-nav,
+        .footer-contact {
+          gap: 0.5rem;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-hero {
+    padding: $pad-xl 0;
+
+    .about-container {
+      width: 80%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1;
+      height: auto;
+      gap: $pad-l;
+
+      .about-text {
+        height: auto;
+        padding: 0 $pad-s;
+        img {
+          width: 15%;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+
+      .about-image {
+        img {
+          height: auto;
+          object-fit: cover;
+        }
+
+        .about-intersect {
+          width: 50%;
+        }
+      }
+    }
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+
+    .footer-section {
+      margin: 0 $pad-m;
+      width: 100%;
+      gap: 1.5rem;
+
+      .footer-flex {
+        gap: $pad-max;
+        flex-direction: row;
+
+        .footer-nav,
+        .footer-contact {
+          gap: 0.5rem;
+          flex-direction: column;
+        }
+      }
+    }
+  }
 }

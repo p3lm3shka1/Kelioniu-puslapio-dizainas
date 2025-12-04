@@ -1,11 +1,6 @@
 //font
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
-//imports
-@import "_media.scss";
-@import "_variables.scss";
-@import "_mixins.scss";
-
 //header
 .contacts-header-bg {
   @include contacts-hero-bg;
@@ -217,6 +212,209 @@ footer {
 
 //MEDIA
 
-@media (min-width: 480px) and (max-width: 768px) {
-  @include media-phone-contacts;
+@media (max-width: 480px) {
+  .contacts-header-bg {
+    width: $w-full;
+    .contacts-h2 {
+      width: $w-full;
+
+      @include flex;
+      h2 {
+        margin: 0 $pad-s;
+      }
+    }
+  }
+  .nav-style {
+    .nav-between {
+      flex-direction: column;
+      align-items: center;
+      padding: $pad-s 0;
+      .logo {
+        width: 60%;
+        padding: $pad-s 0 $pad-s $pad-l;
+      }
+      .navigation {
+        width: 100%;
+        ul {
+          flex-direction: column;
+          gap: $pad-s;
+        }
+      }
+    }
+  }
+  .contacts-section {
+    height: auto;
+    padding-bottom: $pad-l;
+
+    .contacts-grid {
+      width: 100%;
+      height: auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: $pad-m;
+
+      .contacts-flex {
+        grid-area: auto;
+        padding: $pad-m;
+
+        .contacts-columns {
+          flex-direction: column;
+          gap: $pad-m;
+
+          .contacts-info {
+            h2 {
+              padding: $pad-s 0;
+            }
+          }
+        }
+      }
+
+      .contacts-map {
+        grid-area: auto;
+
+        iframe {
+          height: 250px;
+          width: 100%;
+        }
+      }
+
+      .contacts-form {
+        grid-area: auto;
+        h2 {
+          padding: $pad-m $pad-m 0;
+        }
+        .form-section {
+          padding: $pad-s $pad-m;
+        }
+        .contacts-btn {
+          margin: $pad-m;
+        }
+      }
+    }
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+
+    .footer-section {
+      margin: 0 $pad-m;
+      width: 100%;
+      gap: 1.5rem;
+      flex-direction: column;
+
+      .footer-flex {
+        gap: 1.5rem;
+        flex-direction: column;
+
+        .footer-nav,
+        .footer-contact {
+          gap: 0.5rem;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contacts-header-bg {
+    width: $w-full;
+    height: $height-half;
+    .contacts-h2 {
+      width: $w-full;
+      h2 {
+        margin: 0 $pad-s;
+      }
+    }
+  }
+  .nav-style {
+    .nav-between {
+      flex-direction: column;
+      align-items: center;
+      padding: $pad-s 0;
+      .logo {
+        width: 40%;
+        padding: $pad-s 0 $pad-s $pad-l;
+      }
+      .navigation {
+        width: 100%;
+        ul {
+          gap: $pad-s;
+        }
+      }
+    }
+  }
+
+  .contacts-section {
+    height: auto;
+    padding-bottom: $pad-l;
+
+    .contacts-grid {
+      width: 90%;
+      height: auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: $pad-m;
+
+      .contacts-flex {
+        grid-area: auto;
+        padding: $pad-m;
+        flex-direction: row;
+
+        .contacts-columns {
+          gap: $pad-m;
+
+          .contacts-info {
+            h2 {
+              padding: $pad-s $pad-l;
+            }
+          }
+        }
+      }
+
+      .contacts-map {
+        grid-area: auto;
+
+        iframe {
+          height: 400px;
+          width: 100%;
+        }
+      }
+
+      .contacts-form {
+        grid-area: auto;
+        h2 {
+          padding: $pad-m $pad-m 0;
+        }
+        .form-section {
+          padding: $pad-s $pad-m;
+        }
+        .contacts-btn {
+          margin: $pad-m;
+        }
+      }
+    }
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+
+    .footer-section {
+      margin: 0 $pad-m;
+      width: 100%;
+      gap: 1.5rem;
+
+      .footer-flex {
+        gap: 1.5rem;
+        flex-direction: row;
+
+        .footer-nav,
+        .footer-contact {
+          gap: 0.5rem;
+          flex-direction: column;
+        }
+      }
+    }
+  }
 }
