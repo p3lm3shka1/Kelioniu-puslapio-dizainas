@@ -36,7 +36,7 @@
       z-index: 10;
 
       img {
-        width: 100%;
+        width: $w-full;
         height: $height-half;
         object-fit: cover;
         display: block;
@@ -55,7 +55,7 @@
   //header
   .contacts-header-bg {
     width: $w-full;
-    height: 100vh;
+    height: $vh-full;
     .contacts-h2 {
       width: $w-full;
 
@@ -76,7 +76,7 @@
         padding: $pad-s 0 $pad-s $pad-l;
       }
       .navigation {
-        width: 100%;
+        width: $w-full;
         ul {
           flex-direction: column;
           gap: $pad-s;
@@ -90,7 +90,7 @@
     padding: $pad-l 0;
 
     .about-container {
-      width: 100%;
+      width: $w-full;
       grid-template-columns: 1fr;
       height: auto;
       gap: $pad-m;
@@ -107,7 +107,7 @@
         }
 
         .about-intersect {
-          width: 60%;
+          width: $w-l;
         }
       }
     }
@@ -120,7 +120,7 @@
 
     .footer-section {
       margin: 0 $pad-m;
-      width: 100%;
+      width: $w-full;
       gap: 1.5rem;
       flex-direction: column;
 
@@ -143,7 +143,7 @@
     padding: $pad-xl 0;
 
     .about-container {
-      width: 80%;
+      width: $w-xl;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1;
       height: auto;
@@ -178,7 +178,7 @@
 
     .footer-section {
       margin: 0 $pad-m;
-      width: 100%;
+      width: $w-full;
       gap: 1.5rem;
 
       .footer-flex {

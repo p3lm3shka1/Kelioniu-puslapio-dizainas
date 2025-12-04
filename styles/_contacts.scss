@@ -247,7 +247,7 @@ footer {
     padding-bottom: $pad-l;
 
     .contacts-grid {
-      width: 100%;
+      width: $w-full;
       height: auto;
       grid-template-columns: 1fr;
       grid-template-rows: auto;
@@ -274,7 +274,7 @@ footer {
 
         iframe {
           height: 250px;
-          width: 100%;
+          width: $w-full;
         }
       }
 
@@ -298,7 +298,7 @@ footer {
 
     .footer-section {
       margin: 0 $pad-m;
-      width: 100%;
+      width: $w-full;
       gap: 1.5rem;
       flex-direction: column;
 
@@ -333,11 +333,11 @@ footer {
       align-items: center;
       padding: $pad-s 0;
       .logo {
-        width: 40%;
+        width: $w-m;
         padding: $pad-s 0 $pad-s $pad-l;
       }
       .navigation {
-        width: 100%;
+        width: $w-full;
         ul {
           gap: $pad-s;
         }
@@ -377,7 +377,7 @@ footer {
 
         iframe {
           height: 400px;
-          width: 100%;
+          width: $w-full;
         }
       }
 
@@ -402,7 +402,7 @@ footer {
 
     .footer-section {
       margin: 0 $pad-m;
-      width: 100%;
+      width: $w-full;
       gap: 1.5rem;
 
       .footer-flex {
