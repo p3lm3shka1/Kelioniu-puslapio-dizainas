@@ -24,10 +24,9 @@
         .nav-between {
           flex-direction: column;
 
-          padding: $pad-s 0;
           .logo {
             width: auto;
-            padding: $pad-s 0 $pad-s $pad-l;
+            padding: 0 0 0 $pad-l;
           }
           .navigation {
             width: 100%;
@@ -55,32 +54,31 @@
       }
 
       .places {
-        padding: $pad-l;
+        padding: $pad-m;
 
         .places-container {
           width: 90%;
-          flex-direction: column; // Одна карточка в ряд
+          flex-direction: column;
 
           .card {
             width: 100%;
-            padding: $pad-l;
+            padding: $pad-m;
           }
 
           .location-images {
-            width: 100%;
+            width: 50%;
+            display: none;
           }
 
           .main-img,
           .bg-img,
           .opacity-img {
-            width: 100%;
-            height: auto;
+            display: none;
           }
         }
       }
     }
 
-    // ===== STATISTICS =====
     .stats-bg {
       height: auto;
 
@@ -99,14 +97,13 @@
           }
 
           .stats-right {
-            grid-template-columns: 1fr; // в колонку
+            grid-template-columns: 1fr;
             gap: $pad-l;
           }
         }
       }
     }
 
-    // ===== GALLERY =====
     .gallery-bg {
       h2 {
         width: 90%;
@@ -191,17 +188,16 @@
 // 480px - 768px (phone)
 .nav-style {
   .nav-between {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: $pad-s 0;
     .logo {
-      width: 40%;
+      width: auto;
       padding: $pad-s 0 $pad-s $pad-l;
     }
     .navigation {
-      width: 100%;
       ul {
-        gap: $pad-s;
+        gap: $pad-m;
       }
     }
   }
@@ -226,9 +222,9 @@
     .nav-between {
       flex-direction: column;
       align-items: center;
-      padding: $pad-s 0;
+
       .logo {
-        width: 60%;
+        width: auto;
         padding: $pad-s 0 $pad-s $pad-l;
       }
       .navigation {

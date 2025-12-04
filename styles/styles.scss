@@ -338,7 +338,3 @@ footer {
 @media (min-width: 480px) and (max-width: 768px) {
   @include styles-main-phone;
 }
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  @include styles-main-tablet;
-}

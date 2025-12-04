@@ -3,6 +3,8 @@
 
 //imports
 @import "_media.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
 
 //header
 .contacts-header-bg {
@@ -217,8 +219,4 @@ footer {
 
 @media (min-width: 480px) and (max-width: 768px) {
   @include media-phone-contacts;
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  @include media-tablet-contacts;
 }
