@@ -67,19 +67,21 @@
   }
   //navigation
   .nav-style {
+    max-width: $w-full;
     .nav-between {
       flex-direction: column;
       align-items: center;
-      padding: $pad-s 0;
+      padding: $pad-l 0 0 0;
       .logo {
-        width: 60%;
-        padding: $pad-s 0 $pad-s $pad-l;
+        width: auto;
+        padding: $pad-m 0 $pad-s 0;
       }
       .navigation {
         width: $w-full;
         ul {
           flex-direction: column;
           gap: $pad-s;
+          padding: $pad-s 0 $pad-s 0;
         }
       }
     }

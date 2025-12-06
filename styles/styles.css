@@ -48,7 +48,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 1rem;
 }
 .nav-style .nav-between .navigation ul a {
   text-decoration: none;
@@ -123,14 +123,17 @@
   .contacts-header-bg .contacts-h2 h2 {
     margin: 0 1rem;
   }
+  .nav-style {
+    max-width: 100%;
+  }
   .nav-style .nav-between {
     flex-direction: column;
     align-items: center;
-    padding: 1rem 0;
+    padding: 3rem 0 0 0;
   }
   .nav-style .nav-between .logo {
-    width: 60%;
-    padding: 1rem 0 1rem 3rem;
+    width: auto;
+    padding: 2rem 0 1rem 0;
   }
   .nav-style .nav-between .navigation {
     width: 100%;
@@ -138,6 +141,7 @@
   .nav-style .nav-between .navigation ul {
     flex-direction: column;
     gap: 1rem;
+    padding: 1rem 0 1rem 0;
   }
   .about-hero {
     padding: 3rem 0;
@@ -275,7 +279,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 1rem;
 }
 .nav-style .nav-between .navigation ul a {
   text-decoration: none;
@@ -709,7 +713,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden;
-  height: 100vh;
+  height: 70vh;
   width: 100%;
 }
 .header-bg .nav-style {
@@ -734,7 +738,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 1rem;
 }
 .header-bg .nav-style .nav-between .navigation ul a {
   text-decoration: none;
@@ -746,7 +750,7 @@ body {
   text-decoration: underline;
 }
 .header-bg .hero {
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -796,6 +800,7 @@ body {
   right: 0;
   width: 40%;
   z-index: 10;
+  top: 45%;
   rotate: 180deg;
   overflow: hidden;
 }
@@ -902,14 +907,14 @@ body {
   position: relative;
   width: 100%;
 }
-.acticles-bg .places .places-container .bg-img {
+.acticles-bg .places .places-container .location-images .bg-img {
   position: absolute;
   right: 50px;
   top: -320px;
   width: 100%;
   opacity: 0.3;
 }
-.acticles-bg .places .places-container .main-img {
+.acticles-bg .places .places-container .location-images .main-img {
   position: absolute;
   left: -50px;
   top: -250px;
@@ -921,7 +926,7 @@ body {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
   z-index: 100;
 }
-.acticles-bg .places .places-container .opacity-img {
+.acticles-bg .places .places-container .location-images .opacity-img {
   position: absolute;
   left: 350px;
   top: -250px;
@@ -1273,6 +1278,7 @@ footer {
 @media (max-width: 480px) {
   .header-bg {
     width: 100%;
+    height: 70vh;
   }
   .header-bg .hero {
     padding: 5rem 0;
@@ -1284,27 +1290,35 @@ footer {
     font-size: 50px;
   }
   .header-bg .hero h3 {
+    text-align: center;
     padding: 0;
     width: 100%;
   }
   .header-bg .hero .hero-btn {
     margin: 3rem 0;
   }
-  .header-bg .hero .nav-style .nav-between {
+  .header-bg .intersect-bg {
+    top: 65%;
+  }
+  .nav-style {
+    max-width: 100%;
+  }
+  .nav-style .nav-between {
     flex-direction: column;
     align-items: center;
-    padding: 1rem 0;
+    padding: 3rem 0 0 0;
   }
-  .header-bg .hero .nav-style .nav-between .logo {
-    width: 60%;
-    padding: 1rem 0 1rem 3rem;
+  .nav-style .nav-between .logo {
+    width: auto;
+    padding: 2rem 0 1rem 0;
   }
-  .header-bg .hero .nav-style .nav-between .navigation {
+  .nav-style .nav-between .navigation {
     width: 100%;
   }
-  .header-bg .hero .nav-style .nav-between .navigation ul {
+  .nav-style .nav-between .navigation ul {
     flex-direction: column;
     gap: 1rem;
+    padding: 1rem 0 1rem 0;
   }
   .acticles-bg .quotes {
     flex-direction: column;
@@ -1317,18 +1331,18 @@ footer {
     width: 100%;
   }
   .acticles-bg .places {
-    width: 80%;
-    padding: 3rem;
+    width: 90%;
+    padding: 2rem;
   }
   .acticles-bg .places .places-container {
-    width: 90%;
+    width: 100%;
   }
   .acticles-bg .places .places-container .card {
     width: 100%;
     padding: 3rem;
   }
   .acticles-bg .places .places-container .location-images {
-    width: 100%;
+    width: auto;
   }
   .acticles-bg .places .places-container .main-img,
   .acticles-bg .places .places-container .bg-img,
@@ -1368,18 +1382,19 @@ footer {
     height: 220px;
   }
   .gallery-bg .gallery-grid .gallery-card .overlay {
-    padding: 1rem;
+    padding: 1rem 0;
   }
   .gallery-bg .gallery-grid .gallery-card .overlay p {
     margin: 1rem;
   }
   .gallery-bg .gallery-grid .gallery-card .overlay .top-btn {
-    margin: 0;
+    width: 70%;
+    margin: 0 1rem;
     font-size: 10px;
     padding: 0.3rem 0.5rem;
   }
   .gallery-bg .gallery-grid .gallery-card .overlay .btm-btn {
-    margin: 0;
+    margin: 0 1rem;
     font-size: 10px;
     padding: 0.3rem 0.5rem;
   }
@@ -1390,9 +1405,10 @@ footer {
 @media (min-width: 768px) and (max-width: 1024px) {
   .header-bg {
     width: 100%;
+    height: 50vh;
   }
   .header-bg .hero {
-    padding: 5rem 0;
+    padding: 5rem;
     justify-content: start;
   }
   .header-bg .hero h1 {
@@ -1408,13 +1424,16 @@ footer {
   .header-bg .hero .hero-btn {
     margin: 3rem 0;
   }
+  .header-bg .hero .intersect-bg {
+    top: 65%;
+  }
   .header-bg .hero .nav-style .nav-between {
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
   }
   .header-bg .hero .nav-style .nav-between .logo {
-    width: 60%;
+    width: auto;
     padding: 1rem 0 1rem 3rem;
   }
   .header-bg .hero .nav-style .nav-between .navigation {
@@ -1423,6 +1442,9 @@ footer {
   .header-bg .hero .nav-style .nav-between .navigation ul {
     flex-direction: column;
     gap: 1rem;
+  }
+  .header-bg .intersect-bg {
+    top: 40%;
   }
   .acticles-bg .quotes {
     flex-direction: column;
@@ -1435,7 +1457,7 @@ footer {
     width: 100%;
   }
   .acticles-bg .places {
-    width: 80%;
+    width: 90%;
     padding: 2rem;
   }
   .acticles-bg .places .places-container {
@@ -1451,8 +1473,7 @@ footer {
   .acticles-bg .places .places-container .main-img,
   .acticles-bg .places .places-container .bg-img,
   .acticles-bg .places .places-container .opacity-img {
-    width: 100%;
-    height: auto;
+    display: none;
   }
   .stats-bg {
     height: auto;
@@ -1487,20 +1508,22 @@ footer {
     height: 220px;
   }
   .gallery-bg .gallery-grid .gallery-card .overlay {
-    padding: 1rem;
+    padding: 1rem 0;
   }
   .gallery-bg .gallery-grid .gallery-card .overlay p {
     margin: 1rem;
   }
   .gallery-bg .gallery-grid .gallery-card .overlay .top-btn {
-    margin: 0;
+    width: 50%;
+    margin: 0 1rem;
     font-size: 12px;
-    padding: 0.5rem auto;
+    padding: 0.7rem 0;
   }
   .gallery-bg .gallery-grid .gallery-card .overlay .btm-btn {
-    margin: 0;
+    width: 30%;
+    margin: 0 1rem;
     font-size: 12px;
-    padding: 0.3rem 0.5rem;
+    padding: 0.5rem 0;
   }
   .gallery-bg .gallery-grid .gallery-card .overlay .btm-btn img {
     height: auto;

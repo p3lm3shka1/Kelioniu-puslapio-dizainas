@@ -96,7 +96,7 @@
         width: auto;
         list-style-type: none;
         @include flex;
-        gap: 3rem;
+        gap: 1rem;
         a {
           text-decoration: none;
           color: $blue;
@@ -125,7 +125,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden;
-  height: 100vh;
+  height: 70vh;
   width: 100%;
 }
 
@@ -135,6 +135,7 @@
   right: 0;
   width: 40%;
   z-index: 10;
+  top: 45%;
   rotate: 180deg;
   overflow: hidden;
 }
