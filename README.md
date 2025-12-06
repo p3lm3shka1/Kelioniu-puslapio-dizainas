@@ -63,5 +63,5 @@ The compiled CSS file (styles.css) is then linked in index.html.
 </details>
 
 ## Author
-### Vitalijus Lazarev
+### Vitalij Lazarev
 ### Website - https://github.com/p3lm3shka1
